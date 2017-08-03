@@ -1,0 +1,16 @@
+{
+  "name": "tutorials-crud",
+  "version": "1.0.0",
+  "dependencies": {
+    "bits-base": "^2.0.0"
+  },
+  "contentElement": "tutorials-crud-app",
+  "contentImport": "/elements/tutorials-crud-app/tutorials-crud-app.html",
+  "appDir": "app",
+  "scopes": [
+    {"name": "public", "displayName": "Public"}
+  ],
+  "displayName": "Tutorials CRUD",
+  "icon": "communication:forum",
+  "category": "Tutorials"
+}
