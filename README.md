@@ -287,18 +287,19 @@ Reloading the page you should see very similar output as before but instead of j
     <tutorials-contacts id="contacts" items="{{contacts}}"></tutorials-contacts>
 
     <vaadin-grid id="grid" items="[[contacts]]">
-      <table>
-        <colgroup>
-          <col name="name" sortable></col>
-          <col name="phone" sortable></col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Number</th>
-          </tr>
-        </thead>
-      </table>
+      <vaadin-grid-column>
+        <template class="header">Name</template>
+        <template>
+          <div class="body-content" data-index$="[[index]]">[[item.name]]</div>
+        </template>
+      </vaadin-grid-column>
+
+      <vaadin-grid-column>
+        <template class="header">Number</template>
+        <template>
+          <div class="body-content" data-index$="[[index]]">[[item.phone]]</div>
+        </template>
+      </vaadin-grid-column>
     </vaadin-grid>
 
   </template>
